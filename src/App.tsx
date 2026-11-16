@@ -8,6 +8,9 @@ function App() {
         <Button type="submit" onClick={(e) => { console.log("Click"); }}>Click me</Button>
       </Form>
       
+      <form onSubmit={(e) => { e.preventDefault(); console.log("Submit"); }}>
+        <button type="submit" onClick={(e) => { console.log("Click"); }}>Click me</button>
+      </form>
     </>
   )
 }
